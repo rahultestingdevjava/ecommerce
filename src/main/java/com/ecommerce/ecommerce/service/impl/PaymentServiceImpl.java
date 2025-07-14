@@ -154,7 +154,7 @@ public class PaymentServiceImpl implements PaymentService {
         notify.put("email", true);
         paymentLinkRequest.put("notify", notify);
 
-        paymentLinkRequest.put("callback_url", "http://localhost:5173/payment-success/" + orderId);
+        paymentLinkRequest.put("callback_url", "https://quickcart-gray.vercel.app/payment-success/" + orderId);
         paymentLinkRequest.put("callback_method", "get");
 
         return razorpay.paymentLink.create(paymentLinkRequest);
