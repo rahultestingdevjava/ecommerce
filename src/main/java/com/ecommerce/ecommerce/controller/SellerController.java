@@ -86,7 +86,7 @@ public ResponseEntity<Seller> createSeller(
 
     // Email subject and message
     String subject = "Zosh Bazaar Email Verification Code";
-    String frontendUrl = "http://localhost:5173/verify-seller/";
+    String frontendUrl = "https://quickcart-gray.vercel.app/verify-seller/";
     String text = "Welcome to Zosh Bazaar, verify your account using this link: " + frontendUrl + otp;
 
     // Send email
